@@ -7,11 +7,12 @@ const useStyle = makeStyles({
   root: {
     display: "flex",
     width: "100vw",
-    height: "4rem",
+    height: "10vh",
     position: "fixed",
     zIndex: "10",
     background: "white",
     justifyContent: "space-between",
+    alignItems: "center",
   },
   name: {
     fontSize: "2rem",
@@ -19,6 +20,9 @@ const useStyle = makeStyles({
     padding: "1rem",
     textTransform: "uppercase",
     fontFamily: "'Raleway', sans-serif",
+    "&:hover": {
+      color: "orange",
+    },
   },
   menu: {
     fontSize: "1rem",
@@ -26,9 +30,15 @@ const useStyle = makeStyles({
     justifyContent: "space-between",
     alignItems: "center",
     textTransform: "uppercase",
+    paddingRight: "1rem",
   },
   item: {
-    paddingRight: "1.2rem",
+    color: "black",
+    textDecoration: "none",
+    padding: "0.5rem 0.6rem",
+    "&:hover": {
+      borderBottom: "0.1rem solid orange",
+    },
   },
 });
 const Header = () => {
