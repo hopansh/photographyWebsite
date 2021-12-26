@@ -4,6 +4,8 @@ import { makeStyles } from "@mui/styles";
 import { Route, Routes } from "react-router-dom";
 import Home from "../Home";
 import About from "../about";
+import Contact from "../contact";
+import Admin from "../admin";
 const useStyle = makeStyles({
   root: {
     width: "100vw",
@@ -18,8 +20,10 @@ const Body = () => {
   return (
     <Container className={classes.root} maxWidth="lg">
       <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/about" element={<About />}></Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/admin" element={<Admin />} />
       </Routes>
     </Container>
   );
