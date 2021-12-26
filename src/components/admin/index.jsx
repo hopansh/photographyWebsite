@@ -1,8 +1,7 @@
 import React, { useState } from "react";
-import { Button, Grid, Input, TextField } from "@mui/material";
+import { Button, Input, TextField } from "@mui/material";
 import { makeStyles } from "@mui/styles";
 import { Box } from "@mui/system";
-import { Image } from "@mui/icons-material";
 import { getStorage, ref, uploadBytes } from "firebase/storage";
 
 const useStyle = makeStyles({
