@@ -149,7 +149,7 @@ EMBEDSOCIALHASHTAG = {
       ifrm.style.width = "100%";
       ifrm.style.height = "100%";
       ifrm.style.border = "0";
-      ifrm.style.top = window.innerWidth > 500 ? "-12vh" : "-17vh";
+      ifrm.style.top = window.innerWidth > 500 ? "-22vh" : "-25vh";
       ifrm.style.position = "absolute";
       ifrm.setAttribute("scrolling", "no");
       albumDiv.appendChild(ifrm);

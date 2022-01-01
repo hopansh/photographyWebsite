@@ -5,6 +5,7 @@ import React from "react";
 function Home() {
   return (
     <div
+      style={{ marginTop: "10vh" }}
       className="embedsocial-hashtag"
       data-ref="b9329b1f70ed1dc152f65939304c1bd7f3ec5fa9"
     ></div>
