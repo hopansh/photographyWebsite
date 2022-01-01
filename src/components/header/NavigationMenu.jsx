@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 const NavigationMenu = ({ classes }) => {
   const menu = [
     {
@@ -18,9 +18,19 @@ const NavigationMenu = ({ classes }) => {
   return (
     <div className={classes.menu}>
       {menu.map((item, index) => (
-        <Link to={item.path} className={classes.item} key={index}>
+        <NavLink
+          to={item.path}
+          className={classes.item}
+          key={index}
+          style={({ isActive }) => {
+            return {
+              paddingBottom: isActive ? "0.4rem" : "",
+              borderBottom: isActive ? "0.1rem solid orange" : "",
+            };
+          }}
+        >
           {item.name}
-        </Link>
+        </NavLink>
       ))}
     </div>
   );

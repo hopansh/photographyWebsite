@@ -35,9 +35,11 @@ const useStyle = makeStyles({
   item: {
     color: "black",
     textDecoration: "none",
-    padding: "0.5rem 0.6rem",
+    padding: "0.5rem 0.4rem",
+    margin: "0rem 0.2rem",
     "&:hover": {
       borderBottom: "0.1rem solid orange",
+      paddingBottom: "0.4rem",
     },
   },
 });
