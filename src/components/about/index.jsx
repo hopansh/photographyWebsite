@@ -1,6 +1,6 @@
 import { Grid } from '@mui/material';
 import { makeStyles } from '@mui/styles';
-import psnl_bg from '../../assets/images/psnl_bg.jpg';
+// import psnl_bg from '../../assets/images/psnl_bg.jpg';
 import React from 'react';
 const useStyle = makeStyles({
   root: {

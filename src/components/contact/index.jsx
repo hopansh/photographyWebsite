@@ -7,7 +7,7 @@ import {
   Email,
   GitHub,
 } from '@mui/icons-material';
-import { Grid, Typography } from '@mui/material';
+import { Grid } from '@mui/material';
 const useStyles = makeStyles({
   root: {
     width: '100%',
